@@ -1,5 +1,5 @@
 # main.py
-from database import init_db
+from app.database import init_db
 
 if __name__ == "__main__":
     print("Initializing database...")
