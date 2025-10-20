@@ -11,5 +11,3 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 소스 복사
 COPY . .
 
-# 실행 명령
-CMD ["python", "main.py"]

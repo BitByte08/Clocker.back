@@ -17,11 +17,13 @@ services:
   app:
     build: .
     container_name: backend_app
+    ports:
+      - "8000:8000"
     depends_on:
       - db
     environment:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/postgres
-    command: python main.py
+    command: python app/main.py
     volumes:
       - .:/app
     restart: on-failure
